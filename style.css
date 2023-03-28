@@ -240,3 +240,156 @@ select {
 
     }
 }
+/* ========================upper body css=============================== */
+.upper-body {
+    margin-top: 70px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* =====left work====== */
+.left-work {
+    width: 250px;
+    color: white;
+    height: 500px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.empty {
+    border: 2px solid rgb(206, 206, 116);
+    width: 100px;
+    margin: 20px 0px 20px 20px;
+
+}
+
+.left-work h1 {
+    color: grey;
+}
+
+.left-work h1 span {
+    display: block;
+    color: rgb(255, 251, 251);
+}
+
+.left-work p,
+.right-work h2 {
+    color: rgb(194, 191, 191);
+}
+
+/* ========right work========= */
+.right-work {
+    z-index: 2;
+    width: 250px;
+    color: rgb(137, 137, 137);
+    height: 500px;
+}
+
+.right-work p {
+    margin-top: 20px;
+}
+
+.right-work h4,
+.right-work .icons {
+
+    color: rgb(227, 227, 89);
+    margin: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.right-work .icons .fa-brands {
+    background-color: rgb(105, 103, 103);
+    padding: 5px;
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.right-work .icons .fa-brands:hover {
+    background-color: white;
+    color: rgb(51, 51, 13);
+}
+
+.right-work h4:hover {
+
+    color: rgb(215, 215, 203);
+}
+
+
+/* ======avatar work========= */
+.avatar-work {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 300px;
+    z-index: 1;
+}
+
+.avatar-work img {
+    width: 200px;
+    background-color: #2c2c3c;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+/* ============media query for upper body======================== */
+@media (max-width:900px) {
+    .left-work {
+        width: 200px;
+        color: white;
+        height: 500px;
+        margin-left: 20px;
+        z-index: 2;
+    }
+    .right-work {
+        z-index: 2;
+        width: 200px;
+        color: rgb(137, 137, 137);
+        height: 300px;
+    }
+    .right-work .icons .fa-brands {
+        padding: 2px;
+        width: 25px;
+        height: 25px;
+        margin: 0px 5px;
+    }
+    .avatar-work {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 300px;
+        z-index: 1;
+    }
+}
+@media (max-width:700px) {
+    .upper-body{
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cen;
+    }
+     .left-work {
+        order: 1;
+        width: 80%;
+        height: 300px;
+    }
+    .right-work {
+        order: 2;
+        width: 80%;
+    }
+    .avatar-work {
+        order: 3;
+        margin-bottom: 50px;
+    }
+    .avatar-work img {
+        width: 360px;
+        height: 400px;
+    } 
+}
+
