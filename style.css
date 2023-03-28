@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* =========================main css=========================== */
+.main {
+    background-image: url("./images/background.png");
+    width: 100%;
+    height: 1900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main .header {
+    text-align: center;
+}
+
+.main .header h1 {
+    font-size: 50px;
+    padding: 100px 30px;
+    color: white;
+    display: inline-block;
+}
+
+.main h1 span {
+    padding: 20px;
+}
+
+.main .header .heading {
+    font-size: 70px;
+    display: inline-block;
+}
+
+.main .header .heading span {
+    color: orange;
+}
+
+
+
+/* =========================main media query========================== */
+@media screen and (max-width:1200px) {
+    .main .header h1 {
+        padding: 70px 20px;
+    }
+
+    .main h1 span {
+        padding: 10px;
+    }
+
+    .main .header .heading {
+        font-size: 60px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .main .header h1 {
+        padding-top: 50px 10px 50px 20px;
+    }
+
+    .main h1 span {
+        padding: 10px;
+    }
+
+    .main .header .heading {
+        font-size: 30px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .main .header h1 {
+        /* padding-top: 20px 50px 20px 20px; */
+        font-size: 20px;
+        padding: 40px 10px;
+    }
+
+    .main .header .heading {
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .main .header h1 {
+        /* padding-top: 20px 50px 20px 20px; */
+        font-size: 18px;
+        padding: 40px 0px 40px 5px;
+    }
+
+    .main .header h1 span {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .main .header .heading {
+        display: inline-block;
+    }
+}
+
+
+/* =========================hero section css=========================== */
+
+.section-hero {
+    height: 60%;
+    width: 70%;
+    background-color: #383444;
+    margin: auto;
+    background-position: top;
+}
+
+/* =========navbar css========== */
+
+nav {
+    padding-top: 80px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+nav .logo {
+    color: white;
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav .logo span {
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 10px;
+    transition: all .5s;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+nav ul li img:hover {
+    cursor: pointer;
+}
+
+
+.checkbox {
+    border: none;
+    width: 800px;
+    height: 40px;
+    display: none;
+    text-align: end;
+}
+
+select {
+    appearance: none;
+    outline: none;
+}
+
+#responsive-navbar {
+    background-color: transparent;
+    border: transparent;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-active {
+    display: none;
+}
+
+.nav-items {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    background-color: rgb(40, 40, 40);
+}
+
+.nav-items:hover {
+    margin: auto;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1000px) {
+    nav .logo {
+        font-size: 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .checkbox {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav .logo {
+        font-size: 20px;
+        margin-left: 80px;
+
+    }
+}
