@@ -249,7 +249,7 @@ select {
 /* ========================upper body css=============================== */
 /* upper body */
 .upper-body{
-    margin: 100px 40px;
+    margin: 100px 40px 0px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -273,7 +273,6 @@ select {
 /* right work */
 .right-work {
     flex-basis: 30%;
-   line-height: 40px;
    color: white;
 }
 .right-work h1{
@@ -298,7 +297,7 @@ select {
     height: 40px;
     background-color: rgb(83, 82, 82);
     padding: 5px;
-    margin: 10px 10px;
+    margin: 10px 10px 90px 10px;
 }
 .fa-brands:hover{
     background-color:rgb(173, 170, 165) ;
@@ -319,12 +318,12 @@ select {
 
 }
 /* media query for upper body */
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1200px) {
     .upper-body{
         flex-direction: column;
     }
     .right-work{
-        margin: 20px auto;
+        margin: 20px auto 0px auto;
         order: 2;
     }
     .avatar-work{
@@ -335,3 +334,101 @@ select {
     }
     
 }
+/* =========================contact section css============================ */
+.contacts-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(43, 36, 36);
+    width: 80%;
+    margin: auto;
+    height: 180px;
+}
+.contacts-section .one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts-section .two{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-section ul li{
+    background-color: #1f1f21;
+    color: white;
+    width: 200px;
+    height: 90px;
+    padding: 20px 10px;
+}
+.contacts-section .one li:nth-child(1) {
+    margin: auto;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+}
+.contacts-section .one li:nth-child(2) {
+    margin: auto;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+}
+.contacts-section .two li:nth-child(1) {
+    margin: auto;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+}
+.contacts-section .two li:nth-child(2) {
+    margin: auto;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+}
+.contacts-section .fa-brands{
+    background-color: transparent;
+}
+.contacts-section .google span:nth-child(1){
+    color: blue;
+}
+.contacts-section .google span:nth-child(2){
+    color: rgb(240, 8, 8);
+}
+.contacts-section .google span:nth-child(3){
+    color: rgb(218, 99, 19);
+}
+.contacts-section .google span:nth-child(4){
+    color: blue;
+}
+.contacts-section .google span:nth-child(5){
+    color: rgb(88, 222, 10);
+}
+.contacts-section .google span:nth-child(6){
+    color: rgb(240, 15, 15);
+}
+/* media query */
+@media screen and (max-width:1500px) {
+    .contacts-section{
+       display: block;
+       height: 190px;
+       width: 390px;
+       margin: auto;
+    }
+    .contacts-section ul{
+        padding-top: 10px;
+        margin: auto;
+    }
+    .contacts-section ul li{
+        padding: 30px 0px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:500px) {
+   .contacts-section{
+    width: 250px;
+    height: 330px;
+
+   }
+   .contacts-section .one {display: block;}
+   .contacts-section .two {display: block;}
+}
+
