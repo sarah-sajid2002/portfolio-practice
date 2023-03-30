@@ -218,6 +218,12 @@ select {
 
 
 @media screen and (max-width:1100px) {
+    nav{
+        background-color: #1f1f20;
+        width: 100%;
+        height: 5vh;
+        margin: auto;
+    }
     nav .logo {
         font-size: 30px;
     }
@@ -233,6 +239,12 @@ select {
 }
 
 @media screen and (max-width:500px) {
+    nav{
+        background-color: #1f1f20;
+        width: 100%;
+        height: 5vh;
+        margin: auto;
+    }
     nav .logo {
         font-size: 20px;
         margin: 0;
@@ -332,17 +344,31 @@ select {
     .avatar-work div img{
         width: 250px ;
     }
+    .right-work .fa-brands{
+       font-size: 18px;
+       width: 25px;
+       padding: 3px;
+       height: 25px;
+    }
     
+}
+@media screen and (max-width:700px){
+.right-work .fa-brands{
+    font-size: 18px;
+    width: 25px;
+    padding: 3px;
+    height: 25px;
+ }
 }
 /* =========================contact section css============================ */
 .contacts-section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(43, 36, 36);
-    width: 80%;
-    margin: auto;
-    height: 180px;
+    background-color: rgb(48, 40, 40);
+    width: 1000px;
+    margin: 0px auto;
+    height: 190px;
 }
 .contacts-section .one{
     display: flex;
@@ -354,63 +380,43 @@ select {
     justify-content: space-between;
 }
 .contacts-section ul li{
-    background-color: #1f1f21;
+    background-color: #1f1f20;
     color: white;
-    width: 200px;
-    height: 90px;
-    padding: 20px 10px;
 }
 .contacts-section .one li:nth-child(1) {
-    margin: auto;
+    margin: auto 30px;
     width: 150px;
-    height: 70px;
+    height: 100px;
     padding: 10px;
 }
 .contacts-section .one li:nth-child(2) {
     margin: auto;
     width: 150px;
-    height: 70px;
+    height: 100px;
     padding: 10px;
 }
 .contacts-section .two li:nth-child(1) {
-    margin: auto;
+    margin: auto 30px;
     width: 150px;
-    height: 70px;
+    height: 100px;    
     padding: 10px;
 }
 .contacts-section .two li:nth-child(2) {
     margin: auto;
     width: 150px;
-    height: 70px;
+    height: 100px;   
     padding: 10px;
 }
 .contacts-section .fa-brands{
     background-color: transparent;
 }
-.contacts-section .google span:nth-child(1){
-    color: blue;
-}
-.contacts-section .google span:nth-child(2){
-    color: rgb(240, 8, 8);
-}
-.contacts-section .google span:nth-child(3){
-    color: rgb(218, 99, 19);
-}
-.contacts-section .google span:nth-child(4){
-    color: blue;
-}
-.contacts-section .google span:nth-child(5){
-    color: rgb(88, 222, 10);
-}
-.contacts-section .google span:nth-child(6){
-    color: rgb(240, 15, 15);
-}
+
 /* media query */
 @media screen and (max-width:1500px) {
     .contacts-section{
-       display: block;
-       height: 190px;
-       width: 390px;
+       flex-direction: column;
+       height: 300px;
+       width: 500px;
        margin: auto;
     }
     .contacts-section ul{
@@ -422,13 +428,97 @@ select {
         margin: auto;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:780px) {
    .contacts-section{
-    width: 250px;
-    height: 330px;
-
+    height: 500px;
+    width: 200px;
    }
-   .contacts-section .one {display: block;}
-   .contacts-section .two {display: block;}
+    .one{
+    flex-direction: column;
+   }
+   .two{
+    flex-direction: column;
+   }
+   
 }
 
+/* ===========================lower body css============================== */
+.lower-body{
+    background-color: rgb(29, 24, 24);
+   display: flex;
+   justify-content: space-around;
+    align-items: center;
+}
+/* needs div css */
+.needs{
+    width: 40%;
+    color: white;
+    margin: auto;
+}
+.needs h1{
+    font-size: 40px;
+}
+.needs h1 span{display: block;}
+.needs p{
+    font-size: 20px;
+    width: 80%;
+
+}
+.needs ul {
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.needs ul  li{
+    margin: 30px 0px;
+}
+.needs ul li span{
+    color: orange; 
+    font-size: 20px;
+}
+/* skills div css */
+.skills{
+    margin: 40px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.skills ul li{
+    color: white;
+}
+.skills ul li .fa-sharp{
+    color: orange;
+}
+.skills img{
+    width: 200px;
+    margin: 20px 0px;
+}
+.skills ul li h1{
+    text-transform: capitalize;
+}
+.skills ul li p{
+    margin: 10px 0px;
+}
+.empty-div{
+    border-bottom: 2px solid grey;
+    width: 80%;
+    margin: 10px 0px;
+}
+/* media query for lower body */
+@media screen and (max-width:800px) {
+    .lower-body{
+        flex-direction: column;
+    }
+    .needs{
+        margin-top: 90px;
+        width: 80%;
+    }
+   
+
+    
+}
